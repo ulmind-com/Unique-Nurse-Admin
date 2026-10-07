@@ -5,13 +5,13 @@ export const env = {
     "http://localhost:8000/api/v1",
   APP_NAME:
     (import.meta.env.VITE_APP_NAME as string) ??
-    "Nupun Home Health Care Services",
+    "Unique Nurse and Aya Services",
 } as const;
 
 export const STORAGE_KEYS = {
-  accessToken: "nupun.access_token",
-  refreshToken: "nupun.refresh_token",
-  user: "nupun.user",
-  theme: "nupun.theme",
-  sidebar: "nupun.sidebar_collapsed",
+  accessToken: "una.access_token",
+  refreshToken: "una.refresh_token",
+  user: "una.user",
+  theme: "una.theme",
+  sidebar: "una.sidebar_collapsed",
 } as const;

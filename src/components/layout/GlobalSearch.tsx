@@ -6,7 +6,6 @@ import {
   CornerDownLeft,
   Stethoscope,
   Newspaper,
-  Package,
   Calendar,
   FileUser,
   Loader2,
@@ -36,7 +35,6 @@ interface SearchResults {
   results: {
     services: { id: string; title: string; slug: string }[];
     blogs: { id: string; title: string; slug: string }[];
-    equipment: { id: string; name: string; slug: string }[];
     bookings: { id: string; reference: string; patient: string; status: string }[];
     applications: { id: string; reference: string; name: string; status: string }[];
   };
@@ -44,7 +42,6 @@ interface SearchResults {
 
 const GROUP_META = {
   services: { icon: Stethoscope, label: "Services", to: "/services" },
-  equipment: { icon: Package, label: "Equipment", to: "/equipment" },
   blogs: { icon: Newspaper, label: "Blogs", to: "/blogs" },
   bookings: { icon: Calendar, label: "Bookings", to: "/bookings" },
   applications: { icon: FileUser, label: "Applications", to: "/applications" },

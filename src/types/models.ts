@@ -41,13 +41,6 @@ export type BookingStatus =
   | "in_progress"
   | "completed"
   | "cancelled";
-export type RentalStatus =
-  | "pending"
-  | "approved"
-  | "rejected"
-  | "active"
-  | "returned"
-  | "cancelled";
 export type ApplicationStatus =
   | "received"
   | "shortlisted"
@@ -139,45 +132,7 @@ export interface Booking extends BaseDoc {
   message?: string | null;
 }
 
-export interface Equipment extends BaseDoc {
-  name: string;
-  slug: string;
-  short_description: string;
-  description: string;
-  category_id?: string | null;
-  category_name?: string | null;
-  featured_image?: ImageAsset | null;
-  gallery: ImageAsset[];
-  rental_price?: number | null;
-  rental_unit: string;
-  security_deposit?: number | null;
-  min_rental_duration?: number | null;
-  max_rental_duration?: number | null;
-  specifications: Record<string, string>;
-  stock: number;
-  is_available: boolean;
-  seo: SEOMeta;
-  is_featured: boolean;
-  order: number;
-  status: ContentStatus;
-}
 
-export interface EquipmentRental extends BaseDoc {
-  reference: string;
-  equipment_id: string;
-  equipment_name: string;
-  customer_name: string;
-  customer_phone: string;
-  customer_email?: string | null;
-  address: string;
-  start_date: string;
-  end_date?: string | null;
-  quantity: number;
-  duration_days?: number | null;
-  total_amount?: number | null;
-  status: RentalStatus;
-  admin_notes?: string | null;
-}
 
 export interface CareerJob extends BaseDoc {
   title: string;
@@ -583,8 +538,6 @@ export interface ActivityLog extends BaseDoc {
 export interface DashboardStats {
   bookings: { total: number; pending: number; approved: number; completed: number };
   services: number;
-  equipment: number;
-  rentals: number;
   applications: number;
   new_contacts: number;
   blogs: number;

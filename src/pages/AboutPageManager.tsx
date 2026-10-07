@@ -142,7 +142,7 @@ export function AboutPageManager() {
             <CardContent className="space-y-5">
               <Field label="Eyebrow Badge">
                 <Input
-                  placeholder="e.g. HOME PAGE – ABOUT NUPUN"
+                  placeholder="e.g. HOME PAGE – ABOUT UNIQUE"
                   {...register("about_hero_badge")}
                   disabled={!canEdit}
                 />
@@ -157,7 +157,7 @@ export function AboutPageManager() {
               <Field label="Hero Description">
                 <Textarea
                   rows={4}
-                  placeholder="Nupun Home Health Care Services provides reliable healthcare..."
+                  placeholder="Unique Nurse and Aya Services provides reliable healthcare..."
                   {...register("about_hero_description")}
                   disabled={!canEdit}
                 />
@@ -244,7 +244,7 @@ export function AboutPageManager() {
                                   <ImageUpload
                                     value={field.value ?? undefined}
                                     onChange={field.onChange}
-                                    folder="nupun/about/founders"
+                                    folder="unique/about/founders"
                                     aspect="square"
                                   />
                                 )}
@@ -264,7 +264,7 @@ export function AboutPageManager() {
                               </Field>
                               <Field label="Role / Title">
                                 <Input
-                                  placeholder="e.g. Founder, Nupun Home Health Care"
+                                  placeholder="e.g. Founder, Unique Nurse and Aya Services"
                                   {...register(`about_founders.${i}.role` as const)}
                                   disabled={!canEdit}
                                 />
@@ -311,7 +311,7 @@ export function AboutPageManager() {
             <CardContent className="space-y-5">
               <Field label="Company Name">
                 <Input
-                  placeholder="Nupun Home Health Care"
+                  placeholder="Unique Nurse and Aya Services"
                   {...register("about_address_name")}
                   disabled={!canEdit}
                 />

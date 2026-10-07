@@ -27,7 +27,7 @@ interface LoginForm {
 }
 
 const HIGHLIGHTS = [
-  { icon: Activity, title: "Real-time operations", text: "Bookings, rentals & applications at a glance." },
+  { icon: Activity, title: "Real-time operations", text: "Bookings, enquiries & applications at a glance." },
   { icon: ShieldCheck, title: "Enterprise security", text: "Role-based access with full audit trails." },
   { icon: Sparkles, title: "Crafted experience", text: "A dashboard designed for daily delight." },
 ];
@@ -76,8 +76,8 @@ export function LoginPage() {
               <HeartPulse className="h-6 w-6" />
             </div>
             <div>
-              <p className="text-lg font-bold">Nupun Health</p>
-              <p className="text-sm text-white/70">Home Health Care Services</p>
+              <p className="text-lg font-bold">Unique Nurse and Aya Services</p>
+              <p className="text-sm text-white/70">Nursing, Aya &amp; Patient Care</p>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export function LoginPage() {
                 The command center for premium home healthcare.
               </h1>
               <p className="mt-3 max-w-md text-white/80">
-                Manage services, bookings, equipment and content — all from one
+                Manage services, bookings, staff and content — all from one
                 elegant, secure workspace.
               </p>
             </div>
@@ -113,7 +113,7 @@ export function LoginPage() {
           </div>
 
           <p className="text-sm text-white/60">
-            © {new Date().getFullYear()} Nupun Home Health Care Services.
+            © {new Date().getFullYear()} Unique Nurse and Aya Services.
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ export function LoginPage() {
               <HeartPulse className="h-6 w-6" />
             </div>
             <div>
-              <p className="text-base font-bold">Nupun Health</p>
+              <p className="text-base font-bold">Unique Nurse and Aya Services</p>
               <p className="text-xs text-muted-foreground">Admin Panel</p>
             </div>
           </div>
@@ -152,7 +152,7 @@ export function LoginPage() {
                   id="email"
                   type="email"
                   autoComplete="off"
-                  placeholder="admin@nupunhealth.com"
+                  placeholder="admin@uniquenurseaya.com"
                   className="pl-9"
                   {...register("email", { required: "Email is required" })}
                 />

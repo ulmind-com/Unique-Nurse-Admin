@@ -16,7 +16,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const STORAGE_KEY = "nupun.media_library";
+const STORAGE_KEY = "una.media_library";
 
 function loadAssets(): ImageAsset[] {
   try {
@@ -29,7 +29,7 @@ function loadAssets(): ImageAsset[] {
 
 export function MediaLibraryPage() {
   const [assets, setAssets] = useState<ImageAsset[]>(loadAssets);
-  const [folder, setFolder] = useState("nupun/media");
+  const [folder, setFolder] = useState("unique/media");
   const [uploading, setUploading] = useState(false);
   const [copied, setCopied] = useState<string | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<ImageAsset | null>(null);

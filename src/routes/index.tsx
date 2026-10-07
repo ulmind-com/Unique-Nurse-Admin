@@ -6,7 +6,6 @@ import { DashboardPage } from "@/pages/DashboardPage";
 import {
   CategoriesPage,
   ServicesPage,
-  EquipmentPage,
   BlogsPage,
   CareersPage,
   TestimonialsPage,
@@ -16,8 +15,6 @@ import {
 import { VideosPage } from "@/pages/VideosPage";
 import { BookingsPage } from "@/pages/bookings/BookingsPage";
 import { ComprehensiveBookingsPage } from "@/pages/bookings/ComprehensiveBookingsPage";
-import { PhysioRequestsPage } from "@/pages/physio/PhysioRequestsPage";
-import { RentalsPage } from "@/pages/RentalsPage";
 import ElderCareRequestsPage from "@/pages/ElderCareRequestsPage";
 import { ApplicationsPage } from "@/pages/ApplicationsPage";
 import { ContactPage } from "@/pages/ContactPage";
@@ -33,8 +30,6 @@ import { RolesPage } from "@/pages/RolesPage";
 import { NotificationsPage } from "@/pages/NotificationsPage";
 import { ActivityLogsPage } from "@/pages/ActivityLogsPage";
 import { ProfilePage } from "@/pages/ProfilePage";
-import { InfectionControlPage } from "@/pages/InfectionControlPage";
-import { InfectionControlEnquiriesPage } from "@/pages/InfectionControlEnquiriesPage";
 import { NotFoundPage } from "@/pages/ErrorPages";
 
 export function AppRoutes() {
@@ -49,9 +44,6 @@ export function AppRoutes() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/comprehensive-bookings" element={<ComprehensiveBookingsPage />} />
-          <Route path="/physio" element={<PhysioRequestsPage />} />
-          <Route path="/equipment" element={<EquipmentPage />} />
-          <Route path="/rentals" element={<RentalsPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/staff" element={<StaffPage />} />
           <Route path="/applications" element={<ApplicationsPage />} />
@@ -72,8 +64,6 @@ export function AppRoutes() {
           <Route path="/roles" element={<RolesPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
           <Route path="/activity" element={<ActivityLogsPage />} />
-          <Route path="/infection-control" element={<InfectionControlPage />} />
-          <Route path="/infection-control-enquiries" element={<InfectionControlEnquiriesPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

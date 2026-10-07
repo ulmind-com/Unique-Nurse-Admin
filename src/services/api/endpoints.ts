@@ -37,13 +37,6 @@ export const endpoints = {
     cancel: (id: string) => `/bookings/${id}/cancel`,
     assign: (id: string) => `/bookings/${id}/assign`,
   },
-  equipment: {
-    root: "/equipment",
-    categories: "/equipment/categories",
-    category: (id: string) => `/equipment/categories/${id}`,
-    rentals: "/equipment/rentals",
-    rental: (id: string) => `/equipment/rentals/${id}`,
-  },
   careers: {
     root: "/careers",
     categories: "/careers/categories",
@@ -78,11 +71,6 @@ export const endpoints = {
     file: "/uploads/file",
     video: "/uploads/video",
     root: "/uploads",
-  },
-  infectionControl: {
-    content: "/infection-control",
-    enquiries: "/infection-control/enquiries",
-    enquiry: (id: string) => `/infection-control/enquiries/${id}`,
   },
   search: "/search",
 } as const;

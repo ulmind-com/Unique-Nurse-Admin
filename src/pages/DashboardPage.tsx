@@ -12,7 +12,6 @@ import {
   Mail,
   ArrowRight,
   Plus,
-  ClipboardList,
 } from "lucide-react";
 import { dashboardService } from "@/services/dashboard.service";
 import { useAuth } from "@/contexts/AuthContext";
@@ -39,7 +38,7 @@ import { formatDate, timeAgo } from "@/lib/utils";
 
 const QUICK_ACTIONS = [
   { label: "New Service", to: "/services", icon: Stethoscope },
-  { label: "Add Equipment", to: "/equipment", icon: Package },
+  { label: "Manage Staff", to: "/staff", icon: Package },
   { label: "Write Article", to: "/blogs", icon: Newspaper },
   { label: "View Bookings", to: "/bookings", icon: CalendarCheck },
 ];
@@ -76,7 +75,6 @@ export function DashboardPage() {
         { label: "Pending Bookings", value: stats.bookings.pending, icon: <Clock />, tone: "warning" as const, hint: "Awaiting review", to: "/bookings" },
         { label: "Completed", value: stats.bookings.completed, icon: <CheckCircle2 />, tone: "success" as const, hint: "Fulfilled bookings", to: "/bookings" },
         { label: "Services", value: stats.services, icon: <Stethoscope />, tone: "accent" as const, to: "/services" },
-        { label: "Rental Requests", value: stats.rentals, icon: <ClipboardList />, tone: "primary" as const, to: "/rentals" },
         { label: "Applications", value: stats.applications, icon: <FileUser />, tone: "accent" as const, to: "/applications" },
         { label: "New Messages", value: stats.new_contacts, icon: <Mail />, tone: "warning" as const, to: "/contact" },
         { label: "Blog Posts", value: stats.blogs, icon: <Newspaper />, tone: "success" as const, to: "/blogs" },

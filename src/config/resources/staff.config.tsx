@@ -8,7 +8,7 @@ import { BoolCell, DateCell, FeaturedCell, MediaCell } from "./cells";
 export const staffConfig: ResourceConfig<StaffMember> = {
   name: "Staff Member",
   titlePlural: "Our Staff",
-  description: "Manage staff members — attendants, nurses, physiotherapists, nannies & japa.",
+  description: "Manage staff members — nurses, Aya, patient attendants, baby caregivers, maids & housekeeping.",
   icon: <Users />,
   service: resourceServices.staff,
   queryKey: "staff",
@@ -67,7 +67,7 @@ export const staffConfig: ResourceConfig<StaffMember> = {
   ],
   fields: [
     { name: "name", label: "Full Name", type: "text", required: true, section: "Details", colSpan: 2 },
-    { name: "category", label: "Category", type: "text", required: true, placeholder: "e.g. Health Attendant, Nurse, Physiotherapist", section: "Details" },
+    { name: "category", label: "Category", type: "text", required: true, placeholder: "e.g. Nurse, Aya, Patient Attendant, Baby Care, Maid", section: "Details" },
     {
       name: "order",
       label: "Order (tab position)",
@@ -94,7 +94,7 @@ export const staffConfig: ResourceConfig<StaffMember> = {
     },
     { name: "experience", label: "Experience", type: "text", placeholder: "e.g. 3 years", section: "Details" },
     { name: "bio", label: "Bio / Description", type: "textarea", section: "Details" },
-    { name: "photo", label: "Photo", type: "image", folder: "nupun/staff", section: "Media" },
+    { name: "photo", label: "Photo", type: "image", folder: "unique/staff", section: "Media" },
     { name: "price_7_days", label: "Price — 7 Days (₹)", type: "number", section: "Pricing" },
     { name: "price_15_days", label: "Price — 15 Days (₹)", type: "number", section: "Pricing" },
     { name: "price_30_days", label: "Price — 30 Days (₹)", type: "number", section: "Pricing" },

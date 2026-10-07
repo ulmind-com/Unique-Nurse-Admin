@@ -174,7 +174,6 @@ export function LiveNotificationListener() {
     
     // Route to the correct page based on type
     if (navType === "contact") navigate("/contact");
-    else if (navType === "rental") navigate("/equipment");
     else navigate("/bookings");
   }, [navigate, alert]);
 
